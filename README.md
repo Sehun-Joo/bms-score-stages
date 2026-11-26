@@ -2,7 +2,7 @@
 
 [Open progression tables](https://sehun-joo.github.io/bms-score-stages/)
 
-Separate AAA, MAX− and 98% tables with approximately equal ability steps, gap-adjusted boundaries, and gradually wider upper-tail steps. No song-count target or A/B subdivisions. All 1,035 charts and fitted difficulty orders are preserved.
+Separate AAA, MAX− and 98% tables with approximately equal ability steps, gap-adjusted boundaries, and gradually wider upper-tail steps. At least seven charts per stage, merging undersized ranges with adjacent ranges; no maximum size or A/B subdivisions. All 1,035 charts and fitted difficulty orders are preserved.
 
 The original compact-folder site remains at https://sehun-joo.github.io/bms-98-table/ with unchanged folders. See score-targets.html for the exact algorithm and limitations. Stage sizes vary intentionally. This is a practice-design heuristic, not a validated human learning curve.
 
