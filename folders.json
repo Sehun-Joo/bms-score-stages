@@ -1,0 +1,282 @@
+[
+  {
+    "id": "001",
+    "label": "001 | 1.500–1.750",
+    "lower_inclusive": 1.5,
+    "upper_exclusive": 1.75,
+    "count": 1,
+    "provisional": 0
+  },
+  {
+    "id": "002",
+    "label": "002 | 2.000–2.220",
+    "lower_inclusive": 2.0,
+    "upper_exclusive": 2.21980509,
+    "count": 3,
+    "provisional": 0
+  },
+  {
+    "id": "003",
+    "label": "003 | 2.220–2.515",
+    "lower_inclusive": 2.21980509,
+    "upper_exclusive": 2.51547706,
+    "count": 8,
+    "provisional": 0
+  },
+  {
+    "id": "004",
+    "label": "004 | 2.515–2.729",
+    "lower_inclusive": 2.51547706,
+    "upper_exclusive": 2.72917989,
+    "count": 9,
+    "provisional": 0
+  },
+  {
+    "id": "005",
+    "label": "005 | 2.729–3.033",
+    "lower_inclusive": 2.72917989,
+    "upper_exclusive": 3.0331915,
+    "count": 34,
+    "provisional": 0
+  },
+  {
+    "id": "006",
+    "label": "006 | 3.033–3.222",
+    "lower_inclusive": 3.0331915,
+    "upper_exclusive": 3.22194547,
+    "count": 24,
+    "provisional": 0
+  },
+  {
+    "id": "007",
+    "label": "007 | 3.222–3.499",
+    "lower_inclusive": 3.22194547,
+    "upper_exclusive": 3.4994056,
+    "count": 50,
+    "provisional": 0
+  },
+  {
+    "id": "008",
+    "label": "008 | 3.499–3.768",
+    "lower_inclusive": 3.4994056,
+    "upper_exclusive": 3.76843492,
+    "count": 59,
+    "provisional": 0
+  },
+  {
+    "id": "009",
+    "label": "009 | 3.768–4.004",
+    "lower_inclusive": 3.76843492,
+    "upper_exclusive": 4.00435267,
+    "count": 69,
+    "provisional": 0
+  },
+  {
+    "id": "010",
+    "label": "010 | 4.004–4.260",
+    "lower_inclusive": 4.00435267,
+    "upper_exclusive": 4.2603942,
+    "count": 81,
+    "provisional": 0
+  },
+  {
+    "id": "011",
+    "label": "011 | 4.260–4.508",
+    "lower_inclusive": 4.2603942,
+    "upper_exclusive": 4.50783958,
+    "count": 68,
+    "provisional": 0
+  },
+  {
+    "id": "012",
+    "label": "012 | 4.508–4.795",
+    "lower_inclusive": 4.50783958,
+    "upper_exclusive": 4.79483022,
+    "count": 96,
+    "provisional": 0
+  },
+  {
+    "id": "013",
+    "label": "013 | 4.795–5.018",
+    "lower_inclusive": 4.79483022,
+    "upper_exclusive": 5.0175692,
+    "count": 71,
+    "provisional": 1
+  },
+  {
+    "id": "014",
+    "label": "014 | 5.018–5.209",
+    "lower_inclusive": 5.0175692,
+    "upper_exclusive": 5.20921295,
+    "count": 39,
+    "provisional": 3
+  },
+  {
+    "id": "015",
+    "label": "015 | 5.209–5.515",
+    "lower_inclusive": 5.20921295,
+    "upper_exclusive": 5.51539436,
+    "count": 66,
+    "provisional": 23
+  },
+  {
+    "id": "016",
+    "label": "016 | 5.515–5.779",
+    "lower_inclusive": 5.51539436,
+    "upper_exclusive": 5.77905438,
+    "count": 58,
+    "provisional": 41
+  },
+  {
+    "id": "017",
+    "label": "017 | 5.779–5.989",
+    "lower_inclusive": 5.77905438,
+    "upper_exclusive": 5.98920951,
+    "count": 36,
+    "provisional": 35
+  },
+  {
+    "id": "018",
+    "label": "018 | 5.989–6.262",
+    "lower_inclusive": 5.98920951,
+    "upper_exclusive": 6.26182336,
+    "count": 42,
+    "provisional": 42
+  },
+  {
+    "id": "019",
+    "label": "019 | 6.262–6.507",
+    "lower_inclusive": 6.26182336,
+    "upper_exclusive": 6.50736776,
+    "count": 33,
+    "provisional": 33
+  },
+  {
+    "id": "020",
+    "label": "020 | 6.507–6.714",
+    "lower_inclusive": 6.50736776,
+    "upper_exclusive": 6.71416327,
+    "count": 13,
+    "provisional": 13
+  },
+  {
+    "id": "021",
+    "label": "021 | 6.714–6.957",
+    "lower_inclusive": 6.71416327,
+    "upper_exclusive": 6.95664892,
+    "count": 23,
+    "provisional": 23
+  },
+  {
+    "id": "022",
+    "label": "022 | 6.957–7.282",
+    "lower_inclusive": 6.95664892,
+    "upper_exclusive": 7.28154801,
+    "count": 32,
+    "provisional": 32
+  },
+  {
+    "id": "023",
+    "label": "023 | 7.282–7.503",
+    "lower_inclusive": 7.28154801,
+    "upper_exclusive": 7.50265045,
+    "count": 13,
+    "provisional": 13
+  },
+  {
+    "id": "024",
+    "label": "024 | 7.503–7.703",
+    "lower_inclusive": 7.50265045,
+    "upper_exclusive": 7.70259075,
+    "count": 8,
+    "provisional": 8
+  },
+  {
+    "id": "025",
+    "label": "025 | 7.703–8.010",
+    "lower_inclusive": 7.70259075,
+    "upper_exclusive": 8.01024083,
+    "count": 23,
+    "provisional": 23
+  },
+  {
+    "id": "026",
+    "label": "026 | 8.010–8.373",
+    "lower_inclusive": 8.01024083,
+    "upper_exclusive": 8.37303984,
+    "count": 15,
+    "provisional": 15
+  },
+  {
+    "id": "027",
+    "label": "027 | 8.373–8.752",
+    "lower_inclusive": 8.37303984,
+    "upper_exclusive": 8.75222859,
+    "count": 13,
+    "provisional": 13
+  },
+  {
+    "id": "028",
+    "label": "028 | 8.752–9.154",
+    "lower_inclusive": 8.75222859,
+    "upper_exclusive": 9.15420806,
+    "count": 13,
+    "provisional": 13
+  },
+  {
+    "id": "029",
+    "label": "029 | 9.154–9.622",
+    "lower_inclusive": 9.15420806,
+    "upper_exclusive": 9.62186411,
+    "count": 20,
+    "provisional": 20
+  },
+  {
+    "id": "030",
+    "label": "030 | 9.622–10.250",
+    "lower_inclusive": 9.62186411,
+    "upper_exclusive": 10.24956778,
+    "count": 6,
+    "provisional": 6
+  },
+  {
+    "id": "031",
+    "label": "031 | 10.250–10.774",
+    "lower_inclusive": 10.24956778,
+    "upper_exclusive": 10.7738643,
+    "count": 2,
+    "provisional": 2
+  },
+  {
+    "id": "032",
+    "label": "032 | 10.774–11.492",
+    "lower_inclusive": 10.7738643,
+    "upper_exclusive": 11.49189667,
+    "count": 4,
+    "provisional": 4
+  },
+  {
+    "id": "033",
+    "label": "033 | 11.492–12.412",
+    "lower_inclusive": 11.49189667,
+    "upper_exclusive": 12.4121563,
+    "count": 1,
+    "provisional": 1
+  },
+  {
+    "id": "034",
+    "label": "034 | 15.805–17.335",
+    "lower_inclusive": 15.80502082,
+    "upper_exclusive": 17.33467058,
+    "count": 1,
+    "provisional": 1
+  },
+  {
+    "id": "035",
+    "label": "035 | 17.335–19.000",
+    "lower_inclusive": 17.33467058,
+    "upper_exclusive": 18.99991328,
+    "count": 1,
+    "provisional": 1
+  }
+]

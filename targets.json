@@ -1,0 +1,44 @@
+{
+  "98": {
+    "id": "98",
+    "label": "98%",
+    "numerator": 98,
+    "denominator": 100,
+    "code": "D98",
+    "path": "",
+    "native": "insane-98-ranges.bmt",
+    "validation": "validation-player-holdout.json",
+    "base_band_width": 0.25,
+    "provisional": 366,
+    "zero_success": 91,
+    "tail_start": 7.565044202964703
+  },
+  "aaa": {
+    "id": "aaa",
+    "label": "AAA",
+    "numerator": 8,
+    "denominator": 9,
+    "code": "DAAA",
+    "path": "aaa/",
+    "native": "insane-aaa.bmt",
+    "validation": "validation.json",
+    "base_band_width": 0.25,
+    "provisional": 1,
+    "zero_success": 0,
+    "tail_start": 2.940528501047804
+  },
+  "max-minus": {
+    "id": "max-minus",
+    "label": "MAX−",
+    "numerator": 17,
+    "denominator": 18,
+    "code": "DMAX−",
+    "path": "max-minus/",
+    "native": "insane-max-minus.bmt",
+    "validation": "validation.json",
+    "base_band_width": 0.25,
+    "provisional": 46,
+    "zero_success": 1,
+    "tail_start": 4.861970796446281
+  }
+}

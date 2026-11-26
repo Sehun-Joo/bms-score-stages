@@ -1,0 +1,50 @@
+{
+  "target": "MAX−",
+  "numerator": 17,
+  "denominator": 18,
+  "threshold": 0.9444444444444444,
+  "design": "80% training players; held-out player scores split into ability reference and evaluation; at least 5 reference charts",
+  "evaluation_records": 751073,
+  "evaluated_players": 6962,
+  "near_target_records": 99865,
+  "overall": {
+    "target_specific": {
+      "log_loss": 0.06080316886863677,
+      "brier": 0.01757708873754222,
+      "actual_rate": 0.05243431730337797,
+      "predicted_rate": 0.05102079350052737
+    },
+    "score_curve": {
+      "log_loss": 0.06239243277833176,
+      "brier": 0.017576019723233943,
+      "actual_rate": 0.05243431730337797,
+      "predicted_rate": 0.053982451724629475
+    },
+    "raw_rate": {
+      "log_loss": 0.18964986415325283,
+      "brier": 0.04780507194185465,
+      "actual_rate": 0.05243431730337797,
+      "predicted_rate": 0.051833958563798535
+    }
+  },
+  "near_target": {
+    "target_specific": {
+      "log_loss": 0.3803463936479694,
+      "brier": 0.11968704139247115,
+      "actual_rate": 0.27758473939818756,
+      "predicted_rate": 0.25814668283394043
+    },
+    "score_curve": {
+      "log_loss": 0.3814670149077818,
+      "brier": 0.11956844254519262,
+      "actual_rate": 0.27758473939818756,
+      "predicted_rate": 0.2824953085076664
+    },
+    "raw_rate": {
+      "log_loss": 0.8059233908083568,
+      "brier": 0.2388623356989424,
+      "actual_rate": 0.27758473939818756,
+      "predicted_rate": 0.08922532844471774
+    }
+  }
+}

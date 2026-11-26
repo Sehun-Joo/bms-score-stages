@@ -1,0 +1,132 @@
+{
+  "design": "80% training players; held-out player reference/evaluation score split 50/50; >=5 reference charts",
+  "seed": 20261125,
+  "training_players": 28692,
+  "evaluated_players": 6962,
+  "evaluation_records": 751073,
+  "near_target_records": 15308,
+  "overall": {
+    "chart_score_curve": {
+      "log_loss": 0.015902080637784876,
+      "brier": 0.004108914494113925,
+      "actual_rate": 0.010301262327363652,
+      "predicted_rate": 0.009041775932053632
+    },
+    "shared_slope_98": {
+      "log_loss": 0.01400587723781795,
+      "brier": 0.0039701371726419115,
+      "actual_rate": 0.010301262327363652,
+      "predicted_rate": 0.009851655596204502
+    },
+    "chart_slope_98": {
+      "log_loss": 0.01405102395988355,
+      "brier": 0.003983080236743752,
+      "actual_rate": 0.010301262327363652,
+      "predicted_rate": 0.009794513637655877
+    },
+    "raw_rate": {
+      "log_loss": 0.052565120975937386,
+      "brier": 0.01005131463223912,
+      "actual_rate": 0.010301262327363652,
+      "predicted_rate": 0.008268627613798542
+    }
+  },
+  "near_target": {
+    "chart_score_curve": {
+      "log_loss": 0.5029057358632197,
+      "brier": 0.16112982517137994,
+      "actual_rate": 0.3585706819963418,
+      "predicted_rate": 0.31495823068788426
+    },
+    "shared_slope_98": {
+      "log_loss": 0.4781922026292322,
+      "brier": 0.15535107019782143,
+      "actual_rate": 0.3585706819963418,
+      "predicted_rate": 0.32712457235753206
+    },
+    "chart_slope_98": {
+      "log_loss": 0.4799867820805175,
+      "brier": 0.15600453719398186,
+      "actual_rate": 0.3585706819963418,
+      "predicted_rate": 0.32184134490850985
+    },
+    "raw_rate": {
+      "log_loss": 1.5766257443121556,
+      "brier": 0.3442819662805366,
+      "actual_rate": 0.3585706819963418,
+      "predicted_rate": 0.02287459412819985
+    }
+  },
+  "paired_player_bootstrap": {
+    "chart_score_curve": {
+      "target_minus_comparator_log_loss": -0.022918953782702287,
+      "interval95": [
+        -0.030649867062037775,
+        -0.01616182116029995
+      ],
+      "interpretation": "negative favors existing chart-slope 98% model"
+    },
+    "shared_slope_98": {
+      "target_minus_comparator_log_loss": 0.0017945794512853027,
+      "interval95": [
+        -0.0015040589941018472,
+        0.0048933849657649174
+      ],
+      "interpretation": "negative favors existing chart-slope 98% model"
+    }
+  },
+  "practice_proxy_quartiles": [
+    {
+      "range": [
+        0.0,
+        7.669379622433698
+      ],
+      "n": 3376,
+      "metrics": {
+        "log_loss": 0.5061177594584556,
+        "brier": 0.16620622505505897,
+        "actual_rate": 0.40106635071090047,
+        "predicted_rate": 0.345904807856816
+      }
+    },
+    {
+      "range": [
+        7.669379622433698,
+        10.082343234323432
+      ],
+      "n": 3752,
+      "metrics": {
+        "log_loss": 0.48045420995932353,
+        "brier": 0.15668542591447168,
+        "actual_rate": 0.3744669509594883,
+        "predicted_rate": 0.3287579290883198
+      }
+    },
+    {
+      "range": [
+        10.082343234323432,
+        13.775470612785789
+      ],
+      "n": 4535,
+      "metrics": {
+        "log_loss": 0.4794019031727874,
+        "brier": 0.15537645240568235,
+        "actual_rate": 0.3336273428886439,
+        "predicted_rate": 0.307845606286214
+      }
+    },
+    {
+      "range": [
+        13.775470612785789,
+        66.2107469512195
+      ],
+      "n": 3645,
+      "metrics": {
+        "log_loss": 0.4560308031552379,
+        "brier": 0.14663629900925315,
+        "actual_rate": 0.33388203017832646,
+        "predicted_rate": 0.30984721593621445
+      }
+    }
+  ]
+}
