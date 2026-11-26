@@ -13,10 +13,10 @@ def stage_groups(rows):
     # Fixed ability increments through the main distribution. Above its 90th
     # percentile, smoothly widen steps rather than making a long sparse ladder.
     tail=values[int(.9*(len(values)-1))]
-    start=math.floor(values[0]/.25)*.25
+    start=math.floor(values[0]/.155)*.155
     edges=[start]; nominal=start
     while nominal<=values[-1]:
-        width=.25*(1+.6*max(0,nominal-tail))
+        width=.155*(1+.6*max(0,nominal-tail))
         nominal+=width
         # Snap within 20% of a step to the largest adjacent-score gap. Only
         # adjust for a meaningful gap; never split identical score estimates.
@@ -24,7 +24,7 @@ def stage_groups(rows):
         gaps=[(b-a,(a+b)/2) for a,b in zip(values,values[1:]) if lo<=(a+b)/2<=hi and b-a>=.01]
         edge=max(gaps,key=lambda g:(g[0],-abs(g[1]-nominal)))[1] if gaps else nominal
         edges.append(round(edge,8))
-    if edges[-1]<=values[-1]:edges.append(round(values[-1]+.25,8))
+    if edges[-1]<=values[-1]:edges.append(round(values[-1]+.155,8))
     groups=[]
     for lo,hi in zip(edges,edges[1:]):
         group=rows[bisect.bisect_left(values,lo):bisect.bisect_left(values,hi)]
@@ -51,7 +51,7 @@ for slug,t in targets.items():
         native.append(dict(name=f'{t["code"]} Stage {label} ({len(group)})',songs=songs))
     header=dict(name=f'Insane {t["label"]} — progression stages',symbol=t['code']+'S ',data_url='data.json',level_order=[f['label'] for f in folders])
     for filename,value in [('header.json',header),('data.json',data),('rankings.json',rows),('folders.json',folders)]:dump(dest/filename,value)
-    t.update(folders=folders,rows=rows,base_band_width=.25,tail_start=tail)
+    t.update(folders=folders,rows=rows,base_band_width=.155,tail_start=tail)
     with gzip.open(dest/t['native'],'wt',encoding='utf-8') as f:json.dump(dict(name=header['name'],url=BASE+path,tag=t['code']+'S',folder=native,course=[]),f,ensure_ascii=False)
     shutil.copy2(SOURCE/path/t['validation'],dest/t['validation'])
     print(slug,len(folders),'stages; counts', [f['count'] for f in folders],flush=True)
@@ -71,7 +71,7 @@ for slug,t in targets.items():
     (SITE/t['path']/'index.html').write_text(page,encoding='utf-8')
 
 dump(SITE/'targets.json',{k:{a:b for a,b in t.items() if a not in ['rows','folders']} for k,t in targets.items()})
-notes='''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Progression stages: method</title><style>body{font:17px/1.6 system-ui;max-width:900px;margin:40px auto;padding:0 22px;background:#10151e;color:#e7ebf2}a{color:#87c5ff}</style><a href="index.html">← Progression tables</a><h1>Practice stages, without a song quota</h1><p>This is a separate edition of the <a href="https://sehun-joo.github.io/bms-98-table/">original compact-folder tables</a>. Its ratings and chart order are identical. Only folder boundaries and names change. Each goal contains all 1,035 charts. Stage numbers are relative to that goal, not comparable across AAA, MAX− and 98%.</p><p>The main range uses steps of 0.25 on the fitted player-ability scale. A boundary can move by up to 20% of its nominal step toward the largest adjacent-chart gap (at least 0.01 ability units) in that window. This favors grouping nearby ratings without allowing arbitrary difficulty jumps. Identical ratings always stay together; any finite grouping can still separate some similar charts.</p><p>Above each goal’s 90th percentile of chart difficulty, nominal step width grows smoothly as 0.25 × [1 + 0.6 × (lower boundary − tail start)]. This makes the sparse upper range coarser without forcing a chart quota or combining all outliers into one enormous range. Empty ranges are omitted; isolated extremes can still produce small stages. Bounds are inclusive below and exclusive above; displayed range bounds are rounded to three decimals.</p><p>These are deliberate practice-design settings, not a learned human training curve. Equal ability increments do not imply equal practice time. Weak-evidence upper-tail estimates may be extrapolated, and one player’s personal ordering can differ. The table does not enforce a completion percentage or remove provisional charts.</p><p>AAA = 8/9 EX; MAX− = 17/18 EX; 98% = 98/100 EX. Rankings use the same player-adjusted target models and held-out-player validation as the original site. Practice volume and age of personal bests remain uncorrected. See the <a href="https://sehun-joo.github.io/bms-98-table/score-targets.html">original model methods and validation</a>.</p><p><a href="insane-score-stages.zip">Download the complete progression edition</a>. Each top link opens its own importable table page. Native .bmt downloads are also available there.</p></html>'''
+notes='''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Progression stages: method</title><style>body{font:17px/1.6 system-ui;max-width:900px;margin:40px auto;padding:0 22px;background:#10151e;color:#e7ebf2}a{color:#87c5ff}</style><a href="index.html">← Progression tables</a><h1>Practice stages, without a song quota</h1><p>This is a separate edition of the <a href="https://sehun-joo.github.io/bms-98-table/">original compact-folder tables</a>. Its ratings and chart order are identical. Only folder boundaries and names change. Each goal contains all 1,035 charts. Stage numbers are relative to that goal, not comparable across AAA, MAX− and 98%.</p><p>The main range uses steps of 0.155 on the fitted player-ability scale. A boundary can move by up to 20% of its nominal step toward the largest adjacent-chart gap (at least 0.01 ability units) in that window. This favors grouping nearby ratings without allowing arbitrary difficulty jumps. Identical ratings always stay together; any finite grouping can still separate some similar charts.</p><p>Above each goal’s 90th percentile of chart difficulty, nominal step width grows smoothly as 0.155 × [1 + 0.6 × (lower boundary − tail start)]. This makes the sparse upper range coarser without forcing a chart quota or combining all outliers into one enormous range. Empty ranges are omitted; isolated extremes can still produce small stages. Bounds are inclusive below and exclusive above; displayed range bounds are rounded to three decimals.</p><p>These are deliberate practice-design settings, not a learned human training curve. Equal ability increments do not imply equal practice time. Weak-evidence upper-tail estimates may be extrapolated, and one player’s personal ordering can differ. The table does not enforce a completion percentage or remove provisional charts.</p><p>AAA = 8/9 EX; MAX− = 17/18 EX; 98% = 98/100 EX. Rankings use the same player-adjusted target models and held-out-player validation as the original site. Practice volume and age of personal bests remain uncorrected. See the <a href="https://sehun-joo.github.io/bms-98-table/score-targets.html">original model methods and validation</a>.</p><p><a href="insane-score-stages.zip">Download the complete progression edition</a>. Each top link opens its own importable table page. Native .bmt downloads are also available there.</p></html>'''
 (SITE/'score-targets.html').write_text(notes,encoding='utf-8')
 (SITE/'README.md').write_text('''# Insane BMS progression stages
 

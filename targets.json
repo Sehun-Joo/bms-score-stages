@@ -8,7 +8,7 @@
     "path": "",
     "native": "insane-98-ranges.bmt",
     "validation": "validation-player-holdout.json",
-    "base_band_width": 0.25,
+    "base_band_width": 0.155,
     "provisional": 366,
     "zero_success": 91,
     "tail_start": 7.565044202964703
@@ -22,7 +22,7 @@
     "path": "aaa/",
     "native": "insane-aaa.bmt",
     "validation": "validation.json",
-    "base_band_width": 0.25,
+    "base_band_width": 0.155,
     "provisional": 1,
     "zero_success": 0,
     "tail_start": 2.940528501047804
@@ -36,7 +36,7 @@
     "path": "max-minus/",
     "native": "insane-max-minus.bmt",
     "validation": "validation.json",
-    "base_band_width": 0.25,
+    "base_band_width": 0.155,
     "provisional": 46,
     "zero_success": 1,
     "tail_start": 4.861970796446281
